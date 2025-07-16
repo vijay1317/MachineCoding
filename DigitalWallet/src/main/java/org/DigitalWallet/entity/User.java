@@ -1,4 +1,4 @@
-package src.main.java.org.DigitalWallet.entity;
+package DigitalWallet.src.main.java.org.DigitalWallet.entity;
 
 import java.util.UUID;
 
