@@ -1,0 +1,12 @@
+Requirements:
+-Board of configurable dimensions (commonly 10x10, 100 cells).
+-Multiple players take turns rolling dice.
+-Board positions can contain snakes (slide down) or ladders (climb up)
+-First player to reach the last cell wins.
+
+System Design:
+- Game: Manages game lifecycle, players, dice rolls, and game flow.
+- Board: Handles snakes, ladders, and general cell management.
+- Player: Tracks name and position.
+- Dice: Simulates dice roll.
+- Snake/Ladder: Define start and end cell, and messages

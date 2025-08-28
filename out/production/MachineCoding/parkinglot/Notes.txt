@@ -1,0 +1,33 @@
+Parking Lot:
+
+Requirements:
+
+user --> enters--> based on Car Type -> parking slots will assign --> user leave parking pay the amount--> Based on vehicle type Fee calculated ->slot free.
+
+Vehicle Type: Bike,Car,Truck
+parkingSlots : Based on Type of Vehicle
+ParkingFee:  Based on vehicle type,+ Based on hourly
+paymentType: UPI,CreditCard,Cash
+
+
+Q) Can we have multiple floors for parking?
+
+
+
+points to consider:
+
+1) ParkingLot  has multiple parking slots availble for parking.
+2) different type of vehicles (Bike,Car,Truck) Can occupy different size of slots.
+3) System calculates the parking fees based on the duration.
+
+Exit and payments:
+i) Each vehicle needs to make payment before exit.
+ii) Multiple payment options should available.
+iii) once payment is successful vechicle exits and slot freed.
+
+
+Implementation:
+
+1) Strategy pattern for parking fare:(basic for non member, prmium )
+    -> Interface ParkingFareStrategy: double calculateFee(String vehicleTye,int duration,DurationType durationType);
+        : @param durationType Type of duration (HOURS or DAYS)

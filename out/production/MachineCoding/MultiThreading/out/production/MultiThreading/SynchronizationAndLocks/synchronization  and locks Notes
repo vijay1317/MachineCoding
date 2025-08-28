@@ -1,0 +1,11 @@
+thread within a given PROCESS share the same memory space, which is both a positive and negative.It enable threads to share
+data, which can be valuable. However,it also creates the opportunity for issue when two threads modify a resource at the same time.
+java provides the synchronization and the lock form the  basis for implementing synchronized execution of code.
+
+    1) most commonly we restrict access to shared resource through the use of the synchronized keyword
+        - it can be applied to:
+            -> methods, code block
+       * if two thread calls the  method of a class then:
+            i) method  executed at same time by both thread if
+                - both thread having different objects of class.
+            ii) two thread could not simultaneously execute the  method if same object is passed then synchronization is required.
